@@ -40,13 +40,17 @@ def run_example():
                     submission.upvote()
                 commented_list.append(submission_id)
                 print(submission.subreddit ,"||", title, "||", datetime.datetime.fromtimestamp(submission.created), "||", datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S"))
+
                 # szalenie istatna czesc gdyz dzieki tej czesci nasz program nie komentuje tego co juz bylo poniewaz nie cofa sie 
                 break
+
             # trzeba zastsowac usypianie programu aby reddit nie blokowal pewnych komentarzy gdy beda zbyt czesto - ograniczenia API
             time.sleep(60)
+
             # dzieki zastosowaniu sys mamy przyjemne zatrzymanie programu jakby ktos chcial uruchomic go z konsoli
             if len(commented_list) >= 2:
                 sys.exit()
+        
         #ponizszy kod wyrzucal wyjatek bardzo szeroki, dlatego na te chwile zostala instrukcja if aby zatrzymac program
         # except:
             # print("Problem z siecia...")
