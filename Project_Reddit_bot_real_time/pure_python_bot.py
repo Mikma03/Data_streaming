@@ -9,11 +9,11 @@ import sys
 import os
 
 # przypisujemy 
-client_id = 'KpUAtJWoCRCOEZggVqMP8g'
-secret = '7OtZ4tQwni40gAopgXAwTQeTDPzxGg'
+client_id = 'xxx'
+secret = 'xxx'
 user_agent = 'Test_11'
 username="No-Blueberry-6622"
-password="Mikma0606!!"
+password="xxx"
 
 # uzywamy moduly praw do zaladowania odpowiednich zmiennych
 reddit = praw.Reddit(client_id=client_id, 
